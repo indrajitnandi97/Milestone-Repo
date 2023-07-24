@@ -1,0 +1,694 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Document</title>
+    <style>
+        body{
+            font-family: 'Poppins', sans-serif;
+            font-family: 'Roboto', sans-serif;
+        }
+        .flex{
+            display: flex;
+
+        }
+        header{
+            width: 100vw;
+            height: 650px;
+            background-color: blueviolet;
+            background-image: url(background.png);
+            background-repeat: no-repeat;
+            background-size: cover;
+            flex-direction: column;
+            
+        }
+        nav{
+            justify-content: space-between;
+            align-items: center;
+            width: 100%;
+            height: 80px;
+        }
+        .div1{
+            align-items: center;
+            gap: 100px;
+            margin-left: 150px;
+        }
+        .div1 h3{
+            color: white;
+            font-size: x-large;
+        }
+        .div1 a{
+            text-decoration: none;
+            margin-right: 20px;
+            color: white;
+            cursor: pointer;
+        }
+        .div1 a:hover{
+            color: black;
+        }
+        nav button{
+            background-color: rgb(113, 113, 255);
+            padding:15px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            color: #ffffff;
+            margin-right: 150px;
+        }
+        nav button:hover{
+            background-color: rgb(38, 38, 255);
+        }
+        .div2{
+            justify-content: space-between;
+            width: 100%;
+            height: 100%;
+            gap: 50px;
+        }
+        .div3{
+            width: 50%;
+            height: 80%;
+            flex-direction: column;
+            justify-content: center;
+            gap: 10px;
+            margin-left: 150px;
+        }
+        .div3 h1{
+            color: white;
+            font-size: 50px;
+        }
+        .div3 p{
+            color: #ffffff;
+        }
+        .button1{
+            cursor: pointer;
+            background-color: rgb(118, 118, 255);
+            color: #ffffff;
+            padding: 10px 20px;
+            border-radius: 30px;
+            border: 1px solid rgb(118, 118, 255);
+        }
+        .button1:hover{
+            background-color:rgb(38, 38, 255);
+        }
+        .button2{
+            cursor: pointer;
+            color: white;
+            background-color: transparent;
+            padding: 10px 20px;
+            border-radius: 30px;
+            border: 1px solid;
+        }
+        .button2:hover{
+            color: rgb(0, 0, 0);
+        }
+        .form1{
+            width: 20%;
+            height: 75%;
+            background-color: #ffffff;
+            flex-direction: column;
+            gap: 10px;
+            padding: 30px;
+            border-radius: 10px;
+            margin-top: 40px;
+            margin-right: 150px;
+        }
+        .form1 h3{
+            font-size: 22px;
+        }
+        .form1 input{
+            padding: 10px;
+            background-color: rgb(241, 241, 241);
+            border: 1px solid grey;
+            border-radius: 5px;
+        }
+        .form1 select{
+            padding: 10px;
+            background-color: rgb(241, 241, 241);
+            border: 1px solid grey;
+            border-radius: 5px;
+        }
+        .form1 button{
+            background-color: rgb(118, 118, 255);
+            padding: 10px;
+            border: 1px solid rgb(118, 118, 255);
+            border-radius: 5px;
+            margin-top: 20px;
+            color: #ffffff;
+            cursor: pointer;
+        }
+        .form1 button:hover{
+            background-color: rgb(38, 38, 255);
+        }
+        .section1{
+            margin-top: 100px;
+            width: 100vw;
+            text-align: center;
+        }
+        .maindiv1{
+            justify-content: center;
+            align-items: center;
+            width: 100vw;
+            height: 500px;
+            gap: 20px;
+        }
+        .box1{
+            border: 1px solid rgb(189, 189, 255);
+            width: 250px;
+            height: 80%;
+            border-radius: 10px;
+        }
+        .box2{
+            background-color: #4787f5;
+            border-radius: 10px 10px 0px 0px;
+            width: 100%;
+            height: 100px;
+            justify-content: center;
+            align-items: center;
+            gap: 15px;
+        }
+        .box2 div{
+            width: 60px;
+            height: 60px;
+            background-color: #ffffff;
+            border-radius: 50px;
+            justify-content: center;
+            align-items: center;
+        }
+        .box2 p{
+            color: #ffffff;
+        }
+        .box3{
+            text-align: start;
+            padding: 20px;
+        }
+        .learnbutton{
+            width: 39%;
+            color: #4787f5;
+            cursor: pointer;
+        }
+        .learnbutton:hover{
+            color: #1b4999;
+        }
+        .section2{
+            width: 100vw;
+            text-align: center;
+            background-color: #f7f7f7;
+            padding-top: 100px;
+        }
+        .box4{
+            border: 1px solid rgb(189, 189, 255);
+            width: 250px;
+            height: 170px;
+            border-radius: 3px;
+            background-color: white;
+            padding: 20px;
+            text-align: left;
+        }
+        .box4 img{
+            width: 50px;
+            height: 50px;
+            border-radius: 50px;
+        }
+        .maindiv2{
+            justify-content: center;
+            align-items: center;
+            width: 100vw;
+            height: 400px;
+            gap: 20px;
+        }
+        .section3{
+            text-align: center;
+            width: 100vw;
+            height: 100%;
+            margin-top: 100px;
+            margin-bottom: 100px;
+        }
+        .section3div1{
+            text-align: start;
+            margin-top: 70px;
+            display: grid;
+            grid-template-columns: 270px 270px 270px;
+            gap: 50px;
+            justify-content: center;
+        }
+        .section3div2{
+            width: 100%;
+            height: 100%;
+            display: flex;
+            align-items: baseline;
+            gap: 10px;
+        }
+        .section4{
+            width: 100vw;
+            height: 100%;
+            background-color: #f7f7f7;
+            text-align: center;
+            padding-top: 100px;
+        }
+        .section4div1{
+            justify-content: center;
+            align-items: end;
+            gap: 2px;
+            height: 600px;
+            padding: 50px 0px;
+        }
+        .section4div2{
+            background-color: white;
+            height: 80%;
+            border: 2px solid rgb(208, 208, 255);
+            border-radius: 5px;
+            padding: 20px;
+        }
+        .arrow{
+            background-color: rgba(0, 128, 0, 0.627);
+            padding: 10px;
+            border-radius: 50px;
+        }
+        .section4para{
+            margin-top: 30px;
+            text-align: left;
+        }
+        .section4button{
+            margin-top: 20px;
+            width: 100%;
+            padding: 10px 0px;
+            background-color: #4787f5;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .section4button:hover{
+            background-color: #1b4999;
+        }
+        .section5{
+            width: 100vw;
+            height: 300px;
+            background-color: #0f1e38;
+            color: white;
+            justify-content: center;
+            align-items: center;
+            gap: 250px;
+        }
+        .section5 h2{
+            font-size: 50px;
+        }
+        .search-wrapper {
+            width: 450px;
+            border-radius: 5px;
+            background: white;
+        }
+        .search-wrapper input {
+            padding-left: 20px;
+            width: 330px;
+            height: 40px;
+            padding: 10px 5px;
+            float: left;
+            border: 0;
+            background: #fff;
+            border-radius: 5px;
+            border-top-style: none;
+            font-size: 20px;
+        }
+        .search-wrapper input:focus {
+            outline: 0;
+            background: #fff;
+        }
+        .search-wrapper input::placeholder {
+            color: #000000;
+            font-size: 15px;            
+            padding-left: 20px;
+        }
+        .search-wrapper button {
+            float: right;
+            border: 0;
+            padding: 0;
+            cursor: pointer;
+            height: 60px;
+            width: 110px;
+            color: #fff;
+            background: #198cff;
+            border-radius: 0px 5px 5px 0px;
+        }
+        .foot1{
+            width: 100vw;
+            padding: 40px 0px;
+            justify-content: center;
+            gap: 100px;
+        }
+        .foot2{
+            width: 100vw;
+            background-color: #f7f7f7;
+            text-align: center;
+            padding: 20px 0px;
+        }
+        .link{
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <header class="flex">
+        <nav class="flex">
+            <div class="flex div1">
+                <div>
+                    <h3>BrandName</h3>
+                </div>
+                <div>
+                    <a href="#">Home</a>
+                    <a href="#">Product</a>
+                    <a href="#">Pricing</a>
+                    <a href="#">Contact</a>
+                </div>
+            </div>    
+            <div>
+                <button>Get Quote Now <i class="fa-solid fa-arrow-right" style="color: #ffffff;"></i></button>
+            </div>
+        </nav>
+        <div class="flex div2">
+            <div class="flex div3">
+                <h1>Meet the Best Hospital</h1>
+                <p>We know how large objects will act, but things on a small scale.</p>
+                <div>
+                    <button class="button1">Get Quote Now</button>
+                    <button class="button2">Learn More</button>
+                </div>
+            </div>
+            <form action="#" class="form1 flex">
+                <h3>Book Appointment</h3>
+                <label for="name">Name *</label>
+                <input type="text" id="name" placeholder="Full Name *">
+                <label for="email">Email address *</label>
+                <input type="email" id="email" placeholder="example@gmail.com">
+                <label for="department">Department *</label>
+                <select id="department">
+                    <option>Please Select</option>
+                    <option>Orthopedics</option>
+                    <option>Nephrology</option>
+                    <option>Ophthalmology</option>
+                </select>
+                <label for="time">Time *</label>
+                <select name="" id="time">
+                    <option>4:00 Available</option>
+                    <option>5:00 Available</option>
+                    <option>6:00 Available</option>
+                    <option>7:00 Available</option>
+                </select>
+                <button>Book Appointment</button>
+            </form>
+        </div>
+    </header>
+    <main>
+        <section class="section1">
+            <h2>Leading Machine</h2>
+            <p>Problems trying to resolve the conflict between <br>
+                the two major realms of Classical physics</p>
+            <div class="maindiv1 flex">
+                <div class="box1">
+                    <div class="box2 flex">
+                        <div class="flex"><i class="fa-regular fa-address-book" style="color: #4787f5;"></i></div>
+                        <p>Emergency Case</p>
+                    </div>
+                    <div class="box3">
+                        <p>- The best products start
+                        with Figma</p>
+                        <p>- Design with real data.</p>
+                        <p>- Lightning fast prototyping</p>
+                        <p>- Fastest way organize</p>
+                        <p>- Work at the speed of thought.</p>
+                        <p class="learnbutton">Learn More</p>
+                    </div>
+                </div>
+                <div class="box1">
+                    <div class="box2 flex">
+                        <div class="flex"><i class="fa-regular fa-address-book" style="color: #4787f5;"></i></div>
+                        <p>Cancer Care</p>
+                    </div>
+                    <div class="box3">
+                        <p>- The best products start
+                        with Figma</p>
+                        <p>- Design with real data.</p>
+                        <p>- Lightning fast prototyping</p>
+                        <p>- Fastest way organize</p>
+                        <p>- Work at the speed of thought.</p>
+                        <p class="learnbutton">Learn More</p>
+                    </div>
+                </div>
+                <div class="box1">
+                    <div class="box2 flex">
+                        <div class="flex"><i class="fa-regular fa-address-book" style="color: #4787f5;"></i></div>
+                        <p>Health Queries</p>
+                    </div>
+                    <div class="box3">
+                        <p>- The best products start
+                        with Figma</p>
+                        <p>- Design with real data.</p>
+                        <p>- Lightning fast prototyping</p>
+                        <p>- Fastest way organize</p>
+                        <p>- Work at the speed of thought.</p>
+                        <p class="learnbutton">Learn More</p>
+                    </div>
+                </div>
+            </div>    
+        </section>
+        <section class="section2">
+            <h2>Leading Machine</h2>
+            <p>Problems trying to resolve the conflict between <br>
+                the two major realms of Classical physics: Newtonian mechanics</p>
+            <div class="maindiv2 flex">
+                <div class="box4">
+                    <span><i class="fa-solid fa-star" style="color: #c8e109;"></i>
+                        <i class="fa-solid fa-star" style="color: #c8e109;"></i>
+                        <i class="fa-solid fa-star" style="color: #c8e109;"></i>
+                        <i class="fa-solid fa-star" style="color: #c8e109;"></i>
+                        <i class="fa-regular fa-star" style="color: #c8e109;"></i>
+                    </span>
+                    <p>Slate helps you see how many
+                        more days you need to work to
+                        reach your financial goal.</p>
+                    <img src="./#user.1.png" alt="User photo">    
+                </div>
+                <div class="box4">
+                    <span><i class="fa-solid fa-star" style="color: #c8e109;"></i>
+                        <i class="fa-solid fa-star" style="color: #c8e109;"></i>
+                        <i class="fa-solid fa-star" style="color: #c8e109;"></i>
+                        <i class="fa-solid fa-star" style="color: #c8e109;"></i>
+                        <i class="fa-regular fa-star" style="color: #c8e109;"></i>
+                    </span>
+                    <p>Slate helps you see how many
+                        more days you need to work to
+                        reach your financial goal.</p>
+                    <img src="./#user.2.png" alt="User photo">    
+                </div>
+                <div class="box4">
+                    <span><i class="fa-solid fa-star" style="color: #c8e109;"></i>
+                        <i class="fa-solid fa-star" style="color: #c8e109;"></i>
+                        <i class="fa-solid fa-star" style="color: #c8e109;"></i>
+                        <i class="fa-solid fa-star" style="color: #c8e109;"></i>
+                        <i class="fa-regular fa-star" style="color: #c8e109;"></i>
+                    </span>
+                    <p>Slate helps you see how many
+                        more days you need to work to
+                        reach your financial goal.</p>
+                    <img src="./#user.3.png" alt="User photo">    
+                </div>
+            </div>    
+        </section>
+        <section class="section3">
+            <h2>FAQ</h2>
+            <p>Problems trying to resolve the conflict between <br>
+                the two major realms of Classical physics: Newtonian mechanics</p>
+            <div class="section3div1">
+                <div class="section3div2">
+                    <div>
+                        <span><i class="fa-solid fa-chevron-right" style="color: #5a8add;"></i></span>
+                    </div>
+                    <div>
+                        <h4>the quick fox jumps over the lazy dog</h4>
+                        <p>Things on a very small scale behave like nothing</p>
+                    </div>
+                </div>
+                <div class="section3div2">
+                    <div>
+                        <span><i class="fa-solid fa-chevron-right" style="color: #5a8add;"></i></span>
+                    </div>
+                    <div>
+                        <h4>the quick fox jumps over the lazy dog</h4>
+                        <p>Things on a very small scale behave like nothing</p>
+                    </div>
+                </div>
+                <div class="section3div2">
+                    <div>
+                        <span><i class="fa-solid fa-chevron-right" style="color: #5a8add;"></i></span>
+                    </div>
+                    <div>
+                        <h4>the quick fox jumps over the lazy dog</h4>
+                        <p>Things on a very small scale behave like nothing</p>
+                    </div>
+                </div>
+                <div class="section3div2">
+                    <div>
+                        <span><i class="fa-solid fa-chevron-right" style="color: #5a8add;"></i></span>
+                    </div>
+                    <div>
+                        <h4>the quick fox jumps over the lazy dog</h4>
+                        <p>Things on a very small scale behave like nothing</p>
+                    </div>
+                </div>
+                <div class="section3div2">
+                    <div>
+                        <span><i class="fa-solid fa-chevron-right" style="color: #5a8add;"></i></span>
+                    </div>
+                    <div>
+                        <h4>the quick fox jumps over the lazy dog</h4>
+                        <p>Things on a very small scale behave like nothing</p>
+                    </div>
+                </div>
+                <div class="section3div2">
+                    <div>
+                        <span><i class="fa-solid fa-chevron-right" style="color: #5a8add;"></i></span>
+                    </div>
+                    <div>
+                        <h4>the quick fox jumps over the lazy dog</h4>
+                        <p>Things on a very small scale behave like nothing</p>
+                    </div>
+                </div>
+                <div class="section3div2">
+                    <div>
+                        <span><i class="fa-solid fa-chevron-right" style="color: #5a8add;"></i></span>
+                    </div>
+                    <div>
+                        <h4>the quick fox jumps over the lazy dog</h4>
+                        <p>Things on a very small scale behave like nothing</p>
+                    </div>
+                </div>
+                <div class="section3div2">
+                    <div>
+                        <span><i class="fa-solid fa-chevron-right" style="color: #5a8add;"></i></span>
+                    </div>
+                    <div>
+                        <h4>the quick fox jumps over the lazy dog</h4>
+                        <p>Things on a very small scale behave like nothing</p>
+                    </div>
+                </div>
+                <div class="section3div2">
+                    <div>
+                        <span><i class="fa-solid fa-chevron-right" style="color: #5a8add;"></i></span>
+                    </div>
+                    <div>
+                        <h4>the quick fox jumps over the lazy dog</h4>
+                        <p>Things on a very small scale behave like nothing</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="section4">
+            <h2 style="font-size: 50px;">Pricing</h2>
+            <p>Problems trying to resolve the conflict between <br>
+                the two major realms of Classical physics: Newtonian mechanics</p>
+            <div class="section4div1 flex">
+                <div class="section4div2">
+                    <h3>FREE</h3>
+                    <p>Organize across all <br>
+                        apps by hand</p>
+                    <div style="display: flex; justify-content: center; align-items: center; gap: 10px; color: #4787f5;">
+                        <span style="font-size:50px;">0</span>
+                        <span style="display: flex; flex-direction: column; align-items: flex-start;">
+                            <span>$</span>
+                            <span>Per Month</span>
+                        </span>
+                    </div>
+                    <p class="section4para"><span class="arrow"><i class="fa-solid fa-check" style="color: #ffffff;"></i></span> Unlimited product updates</p>
+                    <p class="section4para"><span class="arrow"><i class="fa-solid fa-check" style="color: #ffffff;"></i></span> Unlimited product updates</p>
+                    <p class="section4para"><span class="arrow"><i class="fa-solid fa-check" style="color: #ffffff;"></i></span> Unlimited product updates</p>
+                    <p class="section4para"><span class="arrow"><i class="fa-solid fa-check" style="color: #ffffff;"></i></span> 1GB Cloud storage</p>
+                    <p class="section4para"><span class="arrow"><i class="fa-solid fa-check" style="color: #ffffff;"></i></span> Email and community support</p>
+                    <button class="section4button">Try for free</button>
+                </div>
+                <div class="section4div2" style="height: 85%; background-color: rgb(0, 0, 46); color: white;">
+                    <h3>STANDARD</h3>
+                    <p>Organize across all <br>
+                        apps by hand</p>
+                    <div style="display: flex; justify-content: center; align-items: center; gap: 10px; color: #4787f5;">
+                        <span style="font-size:50px;">9.99</span>
+                        <span style="display: flex; flex-direction: column; align-items: flex-start;">
+                            <span>$</span>
+                            <span>Per Month</span>
+                        </span>
+                    </div>
+                    <p class="section4para"><span class="arrow" style="background-color: rgb(68, 149, 68);"><i class="fa-solid fa-check" style="color: #ffffff;"></i></span> Unlimited product updates</p>
+                    <p class="section4para"><span class="arrow" style="background-color: rgb(68, 149, 68);"><i class="fa-solid fa-check" style="color: #ffffff;"></i></span> Unlimited product updates</p>
+                    <p class="section4para"><span class="arrow" style="background-color: rgb(68, 149, 68);"><i class="fa-solid fa-check" style="color: #ffffff;"></i></span> Unlimited product updates</p>
+                    <p class="section4para"><span class="arrow" style="background-color: rgb(68, 149, 68);"><i class="fa-solid fa-check" style="color: #ffffff;"></i></span> 1GB Cloud storage</p>
+                    <p class="section4para"><span class="arrow" style="background-color: rgb(68, 149, 68);"><i class="fa-solid fa-check" style="color: #ffffff;"></i></span> Email and community support</p>
+                    <button class="section4button">Try for free</button>
+                </div>
+                <div class="section4div2">
+                    <h3>PREMIUM</h3>
+                    <p>Organize across all <br>
+                        apps by hand</p>
+                    <div style="display: flex; justify-content: center; align-items: center; gap: 10px; color: #4787f5;">
+                        <span style="font-size:50px;">19.99</span>
+                        <span style="display: flex; flex-direction: column; align-items: flex-start;">
+                            <span>$</span>
+                            <span>Per Month</span>
+                        </span>
+                    </div>
+                    <p class="section4para"><span class="arrow"><i class="fa-solid fa-check" style="color: #ffffff;"></i></span> Unlimited product updates</p>
+                    <p class="section4para"><span class="arrow"><i class="fa-solid fa-check" style="color: #ffffff;"></i></span> Unlimited product updates</p>
+                    <p class="section4para"><span class="arrow"><i class="fa-solid fa-check" style="color: #ffffff;"></i></span> Unlimited product updates</p>
+                    <p class="section4para"><span class="arrow"><i class="fa-solid fa-check" style="color: #ffffff;"></i></span> 1GB Cloud storage</p>
+                    <p class="section4para"><span class="arrow"><i class="fa-solid fa-check" style="color: #ffffff;"></i></span> Email and community support</p>
+                    <button class="section4button">Try for free</button>
+                </div>
+            </div>
+        </section>
+        <section class="section5 flex">
+            <div>
+                <h2>Get In Touch</h2>
+                <p>The gradual accumulation of information about atomic and <br>
+                    small-scale behaviour during the first quarter of the 20th</p>
+            </div>
+            <form class="search-wrapper cf">
+                <input type="text" placeholder="Your Email" required style="box-shadow: none">
+                <button type="submit">Subscribe</button>
+            </form>
+        </section>
+    </main>
+    <footer>
+        <div class="foot1 flex">
+            <div>
+                <h3 style="font-size: 30px; color: #0f1e38;">Get In Touch</h3>
+                <p style="color:#1b3056a9;">the quick fox jumps over the <br> lazy dog</p>
+                <i class="fa-brands fa-facebook" style="color: #4287ff;"></i>&#160;
+                <i class="fa-brands fa-instagram" style="color: #4287ff;"></i>&#160;
+                <i class="fa-brands fa-twitter" style="color: #4287ff;"></i>
+            </div>
+            <div>
+                <h3 style="font-size: 30px; color: #0f1e38;">Company info</h3>
+                <p class="link" style="color:#1b3056a9;">About Us</p>
+                <p class="link" style="color:#1b3056a9;">Carrier</p>
+                <p class="link" style="color:#1b3056a9;">We are hiring</p>
+                <p class="link" style="color:#1b3056a9;">Blog</p>
+            </div>
+            <div>
+                <h3 style="font-size: 30px; color: #0f1e38;">Features</h3>
+                <p class="link" style="color:#1b3056a9;">Business Marketing</p>
+                <p class="link" style="color:#1b3056a9;">User Analytic</p>
+                <p class="link" style="color:#1b3056a9;">Live Chat</p>
+                <p class="link" style="color:#1b3056a9;">Unlimited Support</p>
+            </div>
+            <div>
+                <h3 style="font-size: 30px; color: #0f1e38;">Resource</h3>
+                <p class="link" style="color:#1b3056a9;">IOS & Android</p>
+                <p class="link" style="color:#1b3056a9;">Watch a Demo</p>
+                <p class="link" style="color:#1b3056a9;">Customers</p>
+                <p class="link" style="color:#1b3056a9;">API</p>
+            </div>
+        </div>
+        <div class="foot2"><p>Made With Love By Figmaland All Right Reserved</p></div>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Document</title>
+    <style>
+        body{
+            font-family: 'Poppins', sans-serif;
+            font-family: 'Roboto', sans-serif;
+        }
+        .navbar{
+            width: 100%;
+            height: 50px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0px 20px;
+        }
+        .navmenu{
+            display: none;
+        }
+        .logo{
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+        .logo img{
+            height: 30px;
+        }
+        .navlinks{
+            display: flex;
+            gap: 20px;
+        }
+        .navlinks a{
+            text-decoration: none;
+            font-size: smaller;
+            color: grey;
+        }
+        .navlinks a:hover{
+            color: orangered;
+        }
+        .navbutton button{
+            font-weight: bold;
+            border: 1px solid;
+            padding: 10px 30px;
+            background-color: white;
+        }
+        .userprofile{
+            display: none;
+        }
+
+        @media screen and (max-width: 576px){
+            .navmenu{
+                display: block;
+            }
+            .navlinks{
+                display: none;
+            }
+            .navbutton{
+                display: none;
+            }
+            .userprofile{
+                display: block;
+            }
+        }
+        section{
+            padding: 10px 20px;
+        }
+        section .sec2{
+            display: none;
+        }
+        section .sec1{
+            display: flex;
+            flex-direction: column;
+        }
+        .para{
+            border-left: 2px solid;
+            padding-left: 10px;
+        }
+        .imagebox{
+            width: 100%;
+            height: 400px;
+            margin-top: 40px;
+            position: relative;
+        }
+        .image1{
+           width: 100%;
+           height: 100%;
+        }
+        .image2{
+            width: 70%;
+            height: 95%;
+            position: absolute;
+            top: 4%;
+            left: 15%;
+        }
+        .image3{
+            position: absolute;
+            top: -3%;
+            left: -2%;
+            width: 105%;
+            height: 100%;
+        }
+        .image4{
+            position: absolute;
+            top: -7%;
+            left: 8%;
+        }
+        .image5{
+            position: absolute;
+            bottom: -20%;
+            left: 3%;
+        }
+        .image6{
+            position: absolute;
+            bottom: 0%;
+            right: -5%;
+        }
+        .image7{
+            position: absolute;
+            bottom: -80%;
+            right: 10%;
+            width: 30%;
+        }
+        .secbutton{
+            margin-top: 35%;
+            display: flex;
+            justify-content: space-between;
+        }
+        .secbutton a{
+            text-decoration: none;
+            padding: 5%;
+            font-weight: bold;
+        }
+        .secbutton1{
+            background-color: orangered;
+            color: rgba(255, 222, 184, 0.747);
+            border: 2px solid orangered;
+        }
+        .secbutton2{
+            color: black;
+            border: 2px solid;
+        }
+        footer{
+            width: 100%;
+            height: 800px;
+            background-color: rgb(0, 41, 76);
+            color: wheat;
+            margin-top: 50%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            gap: 5%;
+        }
+        footer div{
+            text-align: center;
+        }
+        .footer2 img{
+            background-color: lightgreen;
+            padding: 10px;
+            border-radius: 10px;
+        }
+        .footer3 img{
+            background-color: orangered;
+            padding: 10px;
+            border-radius: 10px;
+        }
+        .footer4 img{
+            background-color: rgb(104, 27, 176);
+            padding: 10px;
+            border-radius: 10px;
+        }
+        .navbutton button{
+            cursor: pointer;
+        } 
+        @media screen and (min-width:576px) {
+            .sec1 .imagebox{
+                display: none;
+            }
+            section .sec2{
+                display: block;
+            }
+            .sec1{
+                width: 50%;
+                height: 500px;
+                display: flex;
+                justify-content: start;
+                gap: 5%;
+            }
+            section{
+                padding: 5%;
+                display: flex;
+                justify-content: space-between;
+                gap: 20%;
+            }
+            .image7{
+                bottom: 20%;
+                left: -70%;
+            }
+            .secbutton{
+                margin-top: 0%;
+                justify-content: start;
+                gap: 5%;
+            }
+            .sec1 h1{
+                font-size: xx-large;
+            }
+            footer{
+                margin-top: 0%;
+                height: 100%;
+                flex-direction: row;
+                padding: 5%;
+            }
+            .footer1{
+                text-align: start;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="navmenu">
+                <img src="./menu-icon.png" alt="">
+            </div>
+            <div class="logo">
+                <img src="./logo.png" alt="">
+                <h1>E GURU</h1>
+            </div>
+            <div class="navlinks">
+                <a href="#">Home</a>
+                <a href="#">About Us</a>
+                <a href="#">Features</a>
+                <a href="#">How it works</a>
+            </div>
+            <div class="navbutton">
+                <button>Sign Up</button>
+            </div>
+            <div class="userprofile">
+                <img src="./user-profile.png" alt="">
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section>
+            <div class="sec1">
+                <div><h1>STUDY FROM HOME WITH EXPERT</h1></div>
+                <div class="para"><p>A learning system based on formalised teaching with the help of resources.</p></div>
+                <div class="imagebox">
+                    <img class="image1" src="./main-image-bg.png" alt="">
+                    <img class="image2" src="./main-image.png" alt="">
+                    <img class="image3" src="./main-image-pattern.png" alt="">
+                    <img class="image4" src="./orange-arrow.png" alt="">
+                    <img class="image5" src="./green-arrow.png" alt="">
+                    <img class="image6" src="./circle.png" alt="">
+                    <img class="image7" src="./curve-arrow.png" alt="">
+                </div>
+                <div class="secbutton">
+                    <a class="secbutton1" href="#">Get Started</a>
+                    <a class="secbutton2" href="#">Learn More</a>
+                </div>
+            </div>
+            <div class="sec2">
+                <div class="imagebox">
+                    <img class="image1" src="./main-image-bg.png" alt="">
+                    <img class="image2" src="./main-image.png" alt="">
+                    <img class="image3" src="./main-image-pattern.png" alt="">
+                    <img class="image4" src="./orange-arrow.png" alt="">
+                    <img class="image5" src="./green-arrow.png" alt="">
+                    <img class="image6" src="./circle.png" alt="">
+                    <img class="image7" src="./curve-arrow.png" alt="">
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="footer1">
+            <h1>WHY WE ARE THE BEST</h1>
+            <p>A learning system based on formalised teaching with</p>
+        </div>
+        <div class="footer2">
+            <img src="./vector3.png" alt="">
+            <h3>EXPERT TEACHER</h3>
+            <p>A learning system based on formalised teaching</p>
+        </div>
+        <div class="footer3">
+            <img src="vector2.png" alt="">
+            <h3>ONLINE COURSES</h3>
+            <p>A learning system based on formalised teaching</p>
+        </div>
+        <div class="footer4">
+            <img src="vector1.png" alt="">
+            <h3>24/7 SUPPORT</h3>
+            <p>A learning system based on formalised teaching</p>
+        </div>
+    </footer>
+</body>
+</html>
